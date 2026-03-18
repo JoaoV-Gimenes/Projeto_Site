@@ -1,0 +1,200 @@
+body{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex; gap: 200px; justify-content: center;
+    align-items: center;
+}
+.menu1{
+    background-color: steelblue;
+}
+.menu2{
+    background-color: white;
+    display: flex;
+    color: steelblue;
+    justify-content: space-between;
+}
+.menu2 img{
+    max-width: 100px;
+}
+.horários{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.navegacao1{
+    display: flex; gap: 100px; align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.navegacao1 li{
+    list-style: none;
+    width: 150px;
+    font-size: 20px;
+}
+.navegacao1 a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+.navegacao1 a:hover{
+    color: black;
+}
+.navegacao1 a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: wheat;
+    z-index: -1;
+    transition: height 0.3s ease-in-out;
+}
+.navegacao1 a:hover::before {
+    height: 100%;
+}
+.setor1{
+    background-image: url(./imagens/academia-fire.jpg); 
+    height: 85vh;
+    width: 99,5vw;
+    background-size: 100%;
+}
+.texto{
+    background-color: rgba(70, 130, 180, 0.8);
+    display: inline-block;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 40px 40px;
+}
+.texto h1{
+    font-size: 50px;
+    margin: 0;
+    font-weight: 100;
+}
+.textinho{
+    padding: 20px;
+}
+.textinho h3{
+    font-weight: 400;
+}
+.button{
+    display: inline-block;
+    background-color: wheat;
+    border-radius: 20px;
+    border: none;
+    padding: 20px 50px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.button:hover {
+    background-color: #0E76E6;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}   
+.setor2{
+    background-color: steelblue;
+}
+.setor2 h1{
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    padding-bottom: 50px;
+    font-weight: 200;
+}
+.setor2 h2{
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 200;
+}
+.setor2 button{
+    display: inline-block;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: steelblue;
+}
+.setor2 a{
+    text-decoration: none;
+    color: white;
+}
+.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.modalidades, .modalidades2{
+    display: flex;
+    align-items: center;
+    justify-content: center; gap: 50px;
+    padding: 10px;
+}
+.sobre img{
+    height: 40%;
+    width: 40%;
+    padding: 100px 50px 100px 100px;
+}
+.sobre2 pre{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+}
+.sobre2 h1{
+    color: steelblue;
+    margin: 0;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: 200;
+}
+.sobre2 h3{
+    color: grey;  
+    font-size: 25px;
+    margin: 0;
+    font-weight: 200;
+}
+.sobre2{
+    margin: 100px 0px 0px;
+}
+.sobre{
+    display: flex;
+    justify-content: center;
+}
+.por1, .por2, .por3{
+    background-color: steelblue;
+    display: inline-block;
+    color: white;
+    display: flex; justify-content: space-between;
+    border-radius: 20px;
+    margin: 5px;
+}
+.por1, .por2, .por3 p{
+    padding: 0 10px 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+

@@ -1,0 +1,128 @@
+body{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex; gap: 200px; justify-content: center;
+    align-items: center;
+}
+.menu1{
+    background-color: steelblue;
+}
+.menu2{
+    background-color: white;
+    display: flex;
+    color: steelblue;
+    justify-content: space-between;
+}
+.menu2 img{
+    max-width: 100px;
+}
+.horários{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.navegacao1{
+    display: flex; gap: 100px; align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.navegacao1 li{
+    list-style: none;
+    width: 150px;
+    font-size: 20px;
+}
+.navegacao1 a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+.navegacao1 a:hover{
+    color: black;
+}
+.navegacao1 a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: wheat;
+    z-index: -1;
+    transition: height 0.3s ease-in-out;
+}
+.navegacao1 a:hover::before {
+    height: 100%;
+}
+.modalidades{
+    background-color: #6ab8e9;
+}
+.modal{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.modal img{
+    height: 20%;
+    width: 20%;
+    margin: 0;
+}
+h1{
+    margin: 0;
+    
+}
+pre{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-left: 20px;
+    font-size: 20px;
+
+}
+.texto1 img{
+    height: 65px;
+    width: 65px;
+    padding: 20px;
+}
+.titulo{
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+}
+.b1{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px; 
+}
+.b1 h1{
+    display: flex;
+    padding-bottom: 10px;
+    font-weight: 200;
+}
+.b1 pre{
+    margin: 0;
+}
+.barra{
+    background-color: white;
+    margin: 10px 300px;
+    border-radius: 30px;
+    font-size: 5px;
+}
+.titulinho{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}

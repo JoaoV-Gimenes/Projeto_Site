@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define um estilo base para fontes */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Remove a decoração padrão de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove estilos padrão de listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Garante que imagens não ultrapassem seus containers */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Normaliza botões */
+button, input, textarea, select {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* Corrige problemas de herança em botões */
+button {
+    cursor: pointer;
+}
+
+/* Define um comportamento consistente para elementos de tabela */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
