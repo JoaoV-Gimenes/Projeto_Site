@@ -1,17 +1,16 @@
 body{
-    background-color: black;
     color: white;
 }
 .titulo{
     display:flex;
     justify-content: center;
+    background-color: black;
+    padding: 10px;
 }
 .barra_lateral{
-    background-color: grey;
+    background-color: #404040;
     display: inline-block;
-    padding: 30px;
-    border-radius: 10px;
-    margin-left: 20px;
+    padding: 20px;
 }
 
 .barra_lateral li{
@@ -22,18 +21,39 @@ body{
     max-width: 250px;
     height: auto;
     display: block;
+    flex-shrink: 0;
 }
 
 .pagina_principal{
-    background-color: gold;
+    background-color: #404040;
     padding: 50px;
     border-radius: 10px;
     justify-content: center; gap: 20px;
-    color: black;
-    margin-left: auto;
-    margin-right: auto;
+    color: white;
+    margin: 0px 70px 50px 20px
+    flex: 1;
+    min-width: 300px;
 }
 
 .site{
     display: flex;
+    background-color: black;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #352727;
+}
+.bottom{
+    align-items: center;
+    display: inline-block;
+}
+
+.menu_lateral i{
+    font-size: 12px;
+    padding: 5px;
 }
