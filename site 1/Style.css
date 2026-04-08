@@ -1,52 +1,57 @@
 body{
     color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.titulo{
-    display:flex;
-    justify-content: center;
-    background-color: black;
-    padding: 10px;
+main {
+    flex: 1;
 }
 .barra_lateral{
-    background-color: #404040;
+    background-color: rgb(40, 40, 40, 0.85);
     display: inline-block;
     padding: 20px;
+    flex-direction: column;
 }
 
 .barra_lateral li{
-    padding: 5px;
+    padding: 10px;
 }
 
 .barra_lateral img {
-    max-width: 250px;
+    max-width: 200px;
     height: auto;
     display: block;
     flex-shrink: 0;
 }
 
 .pagina_principal{
-    background-color: #404040;
+    background-color: rgb(40, 40, 40, 0.85);
     padding: 50px;
     border-radius: 10px;
     justify-content: center; gap: 20px;
     color: white;
-    margin: 0px 70px 50px 20px
+    margin: 50px 100px 50px 100px;
     flex: 1;
     min-width: 300px;
 }
 
 .site{
     display: flex;
-    background-color: black;
+    background-image: url(./images/elden-ring-shadow-of-the-erdtree.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 footer{
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: #352727;
+    background-color: rgb(7, 7, 7);
+    border: 0px;
 }
 .bottom{
     align-items: center;
